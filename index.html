@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vedanco — Marketing, Web &amp; App, AI Automation &amp; AI Agents</title>
+  <meta name="description" content="Vedanco is a complete business growth and technology partner: Marketing, Web & App Development, AI Automation, and AI Agents including AI Call Agent." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+  <header class="header" id="navbar">
+    <div class="header__inner">
+      <a href="#home" class="logo" aria-label="Vedanco home">
+        <img src="assets/vedanco-logo.png" alt="Vedanco" />
+        <span>Vedanco</span>
+      </a>
+      <nav>
+        <ul class="nav" id="navMenu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#ai-call-agent">AI Call Agent</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#contact" class="btn btn--primary btn--sm">
+          Get Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__stars"></div>
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="container hero__layout">
+      <div class="hero__content">
+        <div class="badge">
+          <span class="badge__dot"></span>
+          Gujarat's 1st &amp; Only Agency Exclusively Focused on Instagram Marketing.
+        </div>
+        <h1>
+          We Don't Just Grow <span class="hero__ig">Instagram.</span><br />
+          We Grow Your <span>Business.</span>
+        </h1>
+        <p class="hero__specialize">
+          We specialize in <span id="typedText"></span><span class="typed-cursor" aria-hidden="true"></span>
+        </p>
+        <p class="hero__lead">We Scale Brands with Viral Content &amp; Performance Marketing</p>
+        <p class="hero__copy">
+          Most agencies only post content. Vedanco combines Viral Reels, Meta Ads &amp; Content Strategy to help brands generate real leads and sales.
+        </p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--primary">
+            Grow My Business
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--outline">
+            <span class="phone-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+            </span>
+            Book Strategy Call
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero__visual" aria-hidden="true">
+        <div class="hero__ring hero__ring--outer"></div>
+        <div class="hero__ring hero__ring--mid"></div>
+        <div class="hero__logo-glow">
+          <img src="assets/vedanco-logo.png" alt="" />
+        </div>
+        <div class="float-card float-card--1">
+          <strong>2700+</strong>
+          <span>Trusted Clients</span>
+        </div>
+        <div class="float-card float-card--2">
+          <strong>98%</strong>
+          <span>Client Retention</span>
+        </div>
+        <div class="float-card float-card--3">
+          <strong>12+</strong>
+          <span>Years Experience</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats" aria-label="Company statistics">
+    <div class="container">
+      <div class="stats__bar">
+        <div class="stats__item" data-target="500" data-suffix="+">
+          <div class="stats__value"><span class="count">0</span>+</div>
+          <div class="stats__label">Clients Served</div>
+        </div>
+        <div class="stats__item" data-target="200" data-suffix="+">
+          <div class="stats__value"><span class="count">0</span>+</div>
+          <div class="stats__label">Verified Influencers</div>
+        </div>
+        <div class="stats__item" data-target="12" data-suffix="+">
+          <div class="stats__value"><span class="count">0</span>+</div>
+          <div class="stats__label">Years Work Experience</div>
+        </div>
+        <div class="stats__item" data-target="99" data-suffix="%">
+          <div class="stats__value"><span class="count">0</span>%</div>
+          <div class="stats__label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS / 4 CORE VERTICALS -->
+  <section class="section section--white" id="services">
+    <div class="container">
+      <div class="section__header">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Four Core Verticals. <span>Real Business Growth.</span></h2>
+        <p class="section-sub">
+          Vedanco is your complete business growth + technology partner. We combine demand generation, digital engineering, intelligent workflow automation, and autonomous AI agents into one powerful revenue engine.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <!-- 1. MARKETING -->
+        <article class="service-card" id="marketing">
+          <div class="service-card__header">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20h9"/>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </div>
+            <span class="service-card__num">01</span>
+          </div>
+          <h3>Marketing</h3>
+          <p>Performance-driven brand growth and demand generation engines that convert attention into high-ticket pipeline and measurable revenue.</p>
+          <ul class="service-card__list">
+            <li><span class="check-icon">✓</span> <span>Social Media Management</span></li>
+            <li><span class="check-icon">✓</span> <span>Meta Ads (Targeted Scaling)</span></li>
+            <li><span class="check-icon">✓</span> <span>Influencer Marketing</span></li>
+            <li><span class="check-icon">✓</span> <span>Content Creation</span></li>
+            <li><span class="check-icon">✓</span> <span>Personal Branding</span></li>
+          </ul>
+          <div class="tags">
+            <span>Social Media</span>
+            <span>Meta Ads</span>
+            <span>Influencer Marketing</span>
+            <span>Content Creation</span>
+            <span>Personal Branding</span>
+          </div>
+        </article>
+
+        <!-- 2. WEB & APP DEVELOPMENT -->
+        <article class="service-card" id="web-app">
+          <div class="service-card__header">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <span class="service-card__num">02</span>
+          </div>
+          <h3>Web &amp; App Development</h3>
+          <p>High-converting digital products, custom web applications, and cross-platform mobile apps engineered for speed, UX, and scale.</p>
+          <ul class="service-card__list">
+            <li><span class="check-icon">✓</span> <span>Website Development</span></li>
+            <li><span class="check-icon">✓</span> <span>High-Converting Landing Pages</span></li>
+            <li><span class="check-icon">✓</span> <span>Custom Web Applications</span></li>
+            <li><span class="check-icon">✓</span> <span>Mobile App Development (iOS &amp; Android)</span></li>
+            <li><span class="check-icon">✓</span> <span>Maintenance &amp; Support</span></li>
+          </ul>
+          <div class="tags">
+            <span>Web Development</span>
+            <span>Landing Pages</span>
+            <span>Web Applications</span>
+            <span>Mobile Apps</span>
+            <span>Support</span>
+          </div>
+        </article>
+
+        <!-- 3. AI AUTOMATION -->
+        <article class="service-card" id="ai-automation">
+          <div class="service-card__header">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <span class="service-card__num">03</span>
+          </div>
+          <h3>AI Automation</h3>
+          <p>End-to-end intelligent workflow automation that eliminates operational friction, connects systems, and moves leads to close instantly.</p>
+          <ul class="service-card__list">
+            <li><span class="check-icon">✓</span> <span>Business Workflow Automation</span></li>
+            <li><span class="check-icon">✓</span> <span>Lead Automation &amp; Instant Sync</span></li>
+            <li><span class="check-icon">✓</span> <span>WhatsApp Automation</span></li>
+            <li><span class="check-icon">✓</span> <span>CRM Automation</span></li>
+            <li><span class="check-icon">✓</span> <span>Appointment Automation</span></li>
+            <li><span class="check-icon">✓</span> <span>Customer Support Automation</span></li>
+            <li><span class="check-icon">✓</span> <span>AI-Powered Business Automation</span></li>
+          </ul>
+          <div class="tags">
+            <span>Workflow Automation</span>
+            <span>Lead Automation</span>
+            <span>WhatsApp AI</span>
+            <span>CRM Automation</span>
+            <span>Support AI</span>
+          </div>
+        </article>
+
+        <!-- 4. AI AGENT -->
+        <article class="service-card" id="ai-agents">
+          <div class="service-card__header">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                <line x1="12" y1="19" x2="12" y2="22"/>
+              </svg>
+            </div>
+            <span class="service-card__num">04</span>
+          </div>
+          <h3>AI Agent</h3>
+          <p>Autonomous AI voice &amp; conversational agents that handle phone calls, qualify intent, book appointments, and follow up around the clock.</p>
+          <ul class="service-card__list">
+            <li><span class="check-icon">✓</span> <span>AI Call Agent</span></li>
+            <li><span class="check-icon">✓</span> <span>AI Voice Receptionist</span></li>
+            <li><span class="check-icon">✓</span> <span>AI Lead Qualification</span></li>
+            <li><span class="check-icon">✓</span> <span>Appointment Booking</span></li>
+            <li><span class="check-icon">✓</span> <span>Customer Follow-up</span></li>
+            <li><span class="check-icon">✓</span> <span>Inbound &amp; Outbound AI Calls</span></li>
+          </ul>
+          <div class="tags">
+            <span>AI Call Agent</span>
+            <span>Voice Receptionist</span>
+            <span>Lead Qualification</span>
+            <span>Appointment Booking</span>
+            <span>Inbound &amp; Outbound</span>
+          </div>
+          <a href="#ai-call-agent" class="service-card__link">
+            <span>Explore Dedicated AI Call Agent</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED AI CALL AGENT (FLAGSHIP HIGH-VALUE SOLUTION) -->
+  <section class="section section--green ai-agent" id="ai-call-agent">
+    <div class="container ai-agent__grid">
+      <div class="ai-agent__copy">
+        <div class="badge badge--gold">
+          <span class="badge__dot"></span>
+          Enterprise Flagship Solution
+        </div>
+        <h2 class="section-title section-title--light">
+          AI Call Agent &amp; Voice Receptionist.<br />
+          <span>Your Always-On Sales Floor.</span>
+        </h2>
+        <p class="ai-agent__lead">
+          Vedanco’s AI Call Agent is a primary enterprise product line — not an add-on. It answers inbound phone calls in seconds, initiates proactive outbound follow-ups, qualifies customer intent, and books calendar appointments directly into your CRM.
+        </p>
+        <p>
+          With natural, human-like voice inflection, multi-accent recognition, and instant responses, your business captures 100% of pipeline opportunities after hours and during peak volumes without expanding call center payroll.
+        </p>
+
+        <div class="ai-agent__stats">
+          <div class="ai-agent__stat">
+            <strong>0 sec</strong>
+            <span>Wait Time</span>
+          </div>
+          <div class="ai-agent__stat">
+            <strong>24/7/365</strong>
+            <span>Continuous Coverage</span>
+          </div>
+          <div class="ai-agent__stat">
+            <strong>100%</strong>
+            <span>Calls Handled</span>
+          </div>
+          <div class="ai-agent__stat">
+            <strong>3x</strong>
+            <span>Booking Rate</span>
+          </div>
+        </div>
+
+        <div class="ai-agent__actions">
+          <a href="#contact" class="btn btn--white">
+            Book an AI Agent Demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#pricing" class="btn btn--outline-light">
+            View Growth Plans
+          </a>
+        </div>
+      </div>
+
+      <div class="ai-agent__card">
+        <div class="ai-agent__card-header">
+          <div class="ai-agent__card-status">
+            <span class="status-dot"></span>
+            <span>Live Voice Engine Ready</span>
+          </div>
+          <div class="ai-agent__card-pill">Enterprise AI</div>
+        </div>
+
+        <div class="ai-agent__wave" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="ai-agent__features">
+          <div class="ai-agent__feat">
+            <div class="ai-agent__feat-icon" aria-hidden="true">📞</div>
+            <div>
+              <strong>AI Voice Receptionist</strong>
+              <p>Answers every inbound ring 24/7, greets callers professionally in your brand voice, and logs caller details with zero latency.</p>
+            </div>
+          </div>
+          <div class="ai-agent__feat">
+            <div class="ai-agent__feat-icon" aria-hidden="true">🎯</div>
+            <div>
+              <strong>AI Lead Qualification</strong>
+              <p>Asks structured discovery questions, scores prospect intent, filters spam, and immediately notifies your team of hot deals.</p>
+            </div>
+          </div>
+          <div class="ai-agent__feat">
+            <div class="ai-agent__feat-icon" aria-hidden="true">📅</div>
+            <div>
+              <strong>Appointment Booking</strong>
+              <p>Checks real-time team availability and reserves meeting slots directly on Google Calendar, Calendly, or Outlook.</p>
+            </div>
+          </div>
+          <div class="ai-agent__feat">
+            <div class="ai-agent__feat-icon" aria-hidden="true">🔄</div>
+            <div>
+              <strong>Customer Follow-up</strong>
+              <p>Automatically dials abandoned web inquiries, re-engages past prospects, and confirms upcoming appointments.</p>
+            </div>
+          </div>
+          <div class="ai-agent__feat">
+            <div class="ai-agent__feat-icon" aria-hidden="true">⚡</div>
+            <div>
+              <strong>Inbound &amp; Outbound AI Calls</strong>
+              <p>Dual-action voice engine for high-volume inbound reception and outbound speed-to-lead follow-up campaigns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- REAL CLIENT REVIEWS & CASE STUDIES (FROM SCREENSHOT 4) -->
+  <section class="section section--white" id="portfolio">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section-title">Real Client Reviews. <span>Real Business Growth.</span></h2>
+        <p class="section-sub">Businesses choose Vedanco for one reason — performance. See genuine results from brands who trusted us with their growth.</p>
+      </div>
+      <div class="portfolio__grid">
+        <article class="portfolio-card">
+          <div class="portfolio-card__top">
+            <span class="portfolio-card__cat">Multi-Brand Growth</span>
+            <h3>1 Client, 5 Businesses</h3>
+            <p>One client trusted us for 5 different businesses — all brands growing organically through Instagram content strategy.</p>
+          </div>
+          <div class="portfolio-card__metrics">
+            <div><strong>800K+</strong><span>Views</span></div>
+            <div><strong>22K</strong><span>Likes</span></div>
+            <div><strong>310</strong><span>Comments</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-card__top">
+            <span class="portfolio-card__cat">Sales Growth</span>
+            <h3>7 Agencies Failed, We Delivered</h3>
+            <p>After trying 7 digital marketing agencies with no results, 1 order grew to 200+ monthly orders on the web.</p>
+          </div>
+          <div class="portfolio-card__metrics">
+            <div><strong>1.2M+</strong><span>Views</span></div>
+            <div><strong>38K</strong><span>Likes</span></div>
+            <div><strong>520</strong><span>Comments</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-card__top">
+            <span class="portfolio-card__cat">Viral Organic</span>
+            <h3>12M+ Reach — 100+ Robots Sold</h3>
+            <p>100+ robots sold in just 1 month through Instagram content strategy alone — no paid ads, pure organic reach.</p>
+          </div>
+          <div class="portfolio-card__metrics">
+            <div><strong>12M+</strong><span>Views</span></div>
+            <div><strong>320K</strong><span>Likes</span></div>
+            <div><strong>1.1K</strong><span>Comments</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-card__top">
+            <span class="portfolio-card__cat">Influencer Marketing</span>
+            <h3>1 Crore Villa Booking</h3>
+            <p>Influencer marketing campaign generated almost 1 Crore in business through weekend villa bookings.</p>
+          </div>
+          <div class="portfolio-card__metrics">
+            <div><strong>₹1 Cr</strong><span>Booking Value</span></div>
+            <div><strong>100%</strong><span>Villa Occupancy</span></div>
+            <div><strong>Viral</strong><span>Influencer Reach</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-card__top">
+            <span class="portfolio-card__cat">Client Feedback</span>
+            <h3>Happy Times Picnic Place</h3>
+            <p>Owner feedback — 85+ Reels crossed 10K+ views, driving massive footfall to this one-day picnic destination.</p>
+          </div>
+          <div class="portfolio-card__metrics">
+            <div><strong>85+</strong><span>Viral Reels</span></div>
+            <div><strong>10K+</strong><span>Min. Views Each</span></div>
+            <div><strong>Massive</strong><span>Footfall</span></div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-card__top">
+            <span class="portfolio-card__cat">Client Feedback</span>
+            <h3>Pushpnath Agarbatti</h3>
+            <p>Owner saw our Reel on Instagram &amp; signed up for Digital Marketing — real organic results for an agarbatti business.</p>
+          </div>
+          <div class="portfolio-card__metrics">
+            <div><strong>Organic</strong><span>Inbound Lead</span></div>
+            <div><strong>Pan-India</strong><span>Brand Reach</span></div>
+            <div><strong>High ROI</strong><span>Sales Growth</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section--green" id="about">
+    <div class="container about__grid">
+      <div class="about__content">
+        <div class="section-label section-label--light">Why Vedanco</div>
+        <h2 class="section-title section-title--light">
+          Not an agency that posts.<br />
+          A <span>growth + technology</span> partner.
+        </h2>
+        <p>Most firms stop at ads, a website, or a chatbot. Vedanco owns the full loop: attract, convert, automate, and converse.</p>
+        <p>Marketing creates demand. Web and apps capture it. Automation moves it. AI agents close and follow up. That is the Vedanco stack.</p>
+        <blockquote>
+          Positioning: Marketing + Web/App Development + AI Automation + AI Agents — engineered as one operating system for revenue.
+        </blockquote>
+        <div class="about__actions">
+          <a href="#contact" class="btn btn--white">Start a project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#portfolio" class="btn btn--outline-light">View Portfolio</a>
+        </div>
+      </div>
+      <div class="about__visual">
+        <img src="assets/vedanco-logo.png" alt="Vedanco logo" class="about__logo" />
+        <div class="about__badge">
+          <strong>Vedanco</strong>
+          <span>Instagram Growth Agency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--white" id="testimonials">
+    <div class="container">
+      <div class="section__header">
+        <div class="section-label">Client Love</div>
+        <h2 class="section-title">What Our <span>Clients Say</span></h2>
+        <p class="section-sub">Reviews from Vedanco clients on vedanco.com — real feedback from teams we have shipped with.</p>
+      </div>
+      <div class="testimonials__grid">
+        <article class="testimonial-card">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">Vedanco delivered a flawless mobile banking app ahead of schedule. Their AI team is world-class — absolute professionals!</p>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">JC</div>
+            <div>
+              <strong class="testimonial-card__name">James Carter</strong>
+              <span class="testimonial-card__role">CTO, FinEdge Inc.</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">Our eCommerce revenue doubled in 6 months after launch. The Shopify Plus store they built is lightning-fast and stunning.</p>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SM</div>
+            <div>
+              <strong class="testimonial-card__name">Sarah Mitchell</strong>
+              <span class="testimonial-card__role">CEO, RetailX</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">Building a HIPAA-compliant telemedicine platform is no joke. They nailed it — compliance, UX and performance all together.</p>
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">RM</div>
+            <div>
+              <strong class="testimonial-card__name">Rohan Mehta</strong>
+              <span class="testimonial-card__role">Founder, MediCare+</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="testimonials__carousel" aria-hidden="true">
+      <div class="testimonials__track" id="testimonialTrack"></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section--soft" id="pricing">
+    <div class="container">
+      <div class="section__header">
+        <div class="section-label">Regular Package Options</div>
+        <h2 class="section-title">Choose Your <span>Growth Plan</span></h2>
+        <p class="section-sub">All packages include a minimum term of 3 months. Meta Ads budget (₹500/day) paid directly by client. 18% GST charged additionally on all packages.</p>
+      </div>
+      <div class="pricing__grid">
+        <article class="pricing-card" data-plan="basic">
+          <h3>Basic Boost</h3>
+          <div class="pricing-card__price">
+            <span class="amount" data-m="₹30,000" data-q="₹90,000" data-a="₹3,00,000">₹30,000</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="pricing-card__note" hidden></p>
+          <div class="pricing-card__toggle" role="group" aria-label="Billing period">
+            <button type="button" class="active" data-period="monthly">Monthly</button>
+            <button type="button" data-period="quarterly">Quarterly</button>
+            <button type="button" data-period="annual">Annual</button>
+          </div>
+          <div class="pricing-card__highlights">
+            <div><strong class="reels">10</strong><span>Reels/mo</span></div>
+            <div><strong class="shoots">1</strong><span>Shoot</span></div>
+            <div><strong class="months">1</strong><span>Month</span></div>
+          </div>
+          <ul>
+            <li>10 Reels per Month</li>
+            <li>1 Shoot Visit</li>
+            <li>Minimum Term: 3 Months</li>
+            <li>Meta Ads Budget: ₹500/day by Client</li>
+            <li>Instagram Page Management</li>
+            <li>Content Planning &amp; Strategy</li>
+            <li>Monthly Performance Report</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--block">Get Started
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="pricing-card pricing-card--popular" data-plan="advanced">
+          <div class="pricing-card__badge">Most Popular</div>
+          <h3>Advanced Growth</h3>
+          <div class="pricing-card__price">
+            <span class="amount" data-m="₹40,000" data-q="₹1,20,000" data-a="₹4,00,000">₹40,000</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="pricing-card__note" hidden></p>
+          <div class="pricing-card__toggle" role="group" aria-label="Billing period">
+            <button type="button" class="active" data-period="monthly">Monthly</button>
+            <button type="button" data-period="quarterly">Quarterly</button>
+            <button type="button" data-period="annual">Annual</button>
+          </div>
+          <div class="pricing-card__highlights">
+            <div><strong class="reels">15</strong><span>Reels/mo</span></div>
+            <div><strong class="shoots">2</strong><span>Shoots</span></div>
+            <div><strong class="months">1</strong><span>Month</span></div>
+          </div>
+          <ul>
+            <li>15 Reels per Month</li>
+            <li>2 Shoot Visits</li>
+            <li>Minimum Term: 3 Months</li>
+            <li>Meta Ads Budget: ₹500/day by Client</li>
+            <li>Instagram Page Management</li>
+            <li>Content Planning &amp; Strategy</li>
+            <li>Influencer Marketing</li>
+            <li>Monthly Performance Report</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--block">Get Started
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="pricing-card" data-plan="premium">
+          <h3>Premium Impact</h3>
+          <div class="pricing-card__price">
+            <span class="amount" data-m="₹70,000" data-q="₹2,10,000" data-a="₹7,00,000">₹70,000</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="pricing-card__note" hidden></p>
+          <div class="pricing-card__toggle" role="group" aria-label="Billing period">
+            <button type="button" class="active" data-period="monthly">Monthly</button>
+            <button type="button" data-period="quarterly">Quarterly</button>
+            <button type="button" data-period="annual">Annual</button>
+          </div>
+          <div class="pricing-card__highlights">
+            <div><strong class="reels">25</strong><span>Reels/mo</span></div>
+            <div><strong class="shoots">3</strong><span>Shoots</span></div>
+            <div><strong class="months">1</strong><span>Month</span></div>
+          </div>
+          <ul>
+            <li>25 Reels per Month</li>
+            <li>3 Shoot Visits</li>
+            <li>Minimum Term: 3 Months</li>
+            <li>Meta Ads Budget: ₹500/day by Client</li>
+            <li>Instagram Page Management</li>
+            <li>Content Planning &amp; Strategy</li>
+            <li>Influencer Marketing</li>
+            <li>Priority Support &amp; Performance Report</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--block">Get Started
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+      <p class="pricing__gst">* 18% GST charged additionally on all packages. Ad budgets paid directly by the client to Meta platforms.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--white" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's Build <span>Something Great</span></h2>
+        <p class="section-sub">Ready to take your brand to the next level? We'd love to hear about your project.</p>
+      </div>
+      <div class="contact__grid">
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="contact__row">
+            <div class="contact__field">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="contact__field">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="contact__row">
+            <div class="contact__field">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="+91 XXXXX XXXXX" required autocomplete="tel" />
+            </div>
+            <div class="contact__field">
+              <label for="contact-service">Vertical / Solution Interested In</label>
+              <select id="contact-service" name="service" required>
+                <option value="">Select a vertical / solution</option>
+                <option value="Marketing">1. Marketing (Meta Ads, Social Media, Influencer)</option>
+                <option value="Web & App Development">2. Web &amp; App Development (Websites, Apps)</option>
+                <option value="AI Automation">3. AI Automation (Workflows, CRM, WhatsApp)</option>
+                <option value="AI Call Agent & AI Agents">4. AI Call Agent &amp; AI Agents (Flagship Solution)</option>
+                <option value="Complete Growth Partner">Complete Growth Stack (All 4 Verticals)</option>
+              </select>
+            </div>
+          </div>
+          <div class="contact__row">
+            <div class="contact__field">
+              <label for="contact-city">City</label>
+              <select id="contact-city" name="city" required>
+                <option value="">Select a city</option>
+                <option selected>Gandhinagar</option>
+                <option>Ahmedabad</option>
+                <option>Surat</option>
+                <option>Vadodara</option>
+                <option>Rajkot</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="contact__field">
+              <label for="contact-business">Business Name</label>
+              <input type="text" id="contact-business" name="business" placeholder="Your business" required />
+            </div>
+          </div>
+          <div class="contact__field">
+            <label for="contact-instagram">Instagram Handle</label>
+            <input type="text" id="contact-instagram" name="instagram" placeholder="@yourbrand" required />
+          </div>
+          <div class="contact__field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your goals..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Send Message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="contact__success" id="contactSuccess" hidden>Thanks for reaching out. We'll get back to you within 24 hours.</p>
+        </form>
+
+        <aside class="contact__info">
+          <div class="contact__info-card">
+            <h3>Contact Vedanco</h3>
+            <p>Gujarat's Instagram marketing partner for brands that want leads, not just likes.</p>
+            <ul>
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:info@vedanco.com">info@vedanco.com</a>
+              </li>
+              <li>
+                <strong>Phone</strong>
+                <a href="tel:+919510774987">+91 95107 74987</a>
+              </li>
+              <li>
+                <strong>Location</strong>
+                <span>Gandhinagar</span>
+              </li>
+            </ul>
+            <a href="#pricing" class="btn btn--primary">View Pricing</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo">
+          <img src="assets/vedanco-logo.png" alt="Vedanco" />
+          <span>Vedanco</span>
+        </a>
+        <p>Complete Business Growth + Technology Partner. Engineering Demand, Products &amp; AI Intelligence.</p>
+      </div>
+      <div>
+        <h4>Our 4 Verticals</h4>
+        <ul>
+          <li><a href="#marketing">Marketing</a></li>
+          <li><a href="#web-app">Web &amp; App Development</a></li>
+          <li><a href="#ai-automation">AI Automation</a></li>
+          <li><a href="#ai-call-agent">AI Call Agent &amp; AI Agents</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@vedanco.com">info@vedanco.com</a></li>
+          <li><a href="tel:+919510774987">+91 95107 74987</a></li>
+          <li><span>Gandhinagar</span></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--sm">Get Free Quote</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> <strong>Vedanco</strong>. All rights reserved.</p>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
