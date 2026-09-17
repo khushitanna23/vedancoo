@@ -1,11 +1,17 @@
 {
-  "name": "vedanco-mern",
+  "name": "vedanco-backend",
   "version": "1.0.0",
-  "description": "Vedanco Website - Full MERN Stack Application",
+  "description": "Backend API for Vedanco website",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "dev:backend": "npm --prefix backend run dev",
-    "dev:frontend": "npm --prefix frontend run dev",
-    "build": "npm --prefix frontend run build",
-    "start": "npm --prefix backend start"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
   }
 }
